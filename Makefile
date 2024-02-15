@@ -3,8 +3,8 @@ setup:
 start:
 	docker compose up -d  
 run-web:
-	docker compose run rails bash
+	docker exec -it rails bin/rails s -b 0.0.0.0
 run-postgres:
-	docker compose run postgres bash
+	docker exec -it postgres bash
 logs:
 	docker compose logs
