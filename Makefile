@@ -1,6 +1,6 @@
 setup:
-    docker compose build
-start: 
+	docker compose build
+start:
 	docker compose up -d  
 run-web:
 	docker compose run rails bash
